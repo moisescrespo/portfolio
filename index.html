@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+    content="Portfolio personal de Moisés Crespo Paredes, estudiante de Desarrollo de Aplicaciones Web especializado en HTML, CSS, JavaScript, Bootstrap, Node.js y bases de datos.">
+
+    <link rel="icon" type="image/png" href="img/perfil.png">
+
     <title>Moisés Crespo Paredes</title>
 
     <!-- Bootstrap 5.3 -->
@@ -16,6 +21,10 @@
 
 <body>
 
+    <a href="#main-content" class="visually-hidden-focusable">
+        Saltar al contenido principal
+    </a>
+
 <header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -26,9 +35,13 @@
                 Moisés Crespo
             </a>
 
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menu">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
 
                 <span class="navbar-toggler-icon"></span>
 
@@ -78,7 +91,7 @@
 
 </header>
 
-<main>
+<main id="main-content">
 
     <section id="inicio" class="py-5">
 
@@ -116,7 +129,8 @@
 
                     <a href="docs/cv.pdf"
                         class="btn btn-outline-secondary"
-                        download>
+                        download
+                        aria-label="Descargar currículum vitae en formato PDF">
                         Descargar CV
                     </a>
 
@@ -245,23 +259,30 @@
 
                     <div class="card-footer">
 
-                        <a href="#"
-                            class="btn btn-primary btn-sm">
-                            Demo
-                        </a>
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalCodeArts">
+
+                            Ver detalles
+
+                        </button>
 
                         <a href="https://github.com/moisescrespo/CODE-ARTS"
                             class="btn btn-dark btn-sm"
                             target="_blank"
                             rel="noopener">
+
                             GitHub
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
+            </div>    
 
             <!-- Proyecto 2 -->
 
@@ -462,7 +483,7 @@
 
             <div class="col-lg-6 mb-4">
 
-                <form>
+                <form class="needs-validation" novalidate>
 
                     <div class="mb-3">
 
@@ -473,7 +494,14 @@
                         <input
                             type="text"
                             class="form-control"
-                            id="nombre">
+                            id="nombre"
+                            name="nombre"
+                            autocomplete="name"
+                            required>
+
+                        <div class="invalid-feedback">
+                            Introduce tu nombre.
+                        </div>
 
                     </div>
 
@@ -486,7 +514,14 @@
                         <input
                             type="email"
                             class="form-control"
-                            id="email">
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required>
+
+                        <div class="invalid-feedback">
+                            Introduce un correo electrónico válido.
+                        </div>
 
                     </div>
 
@@ -499,7 +534,14 @@
                         <textarea
                             class="form-control"
                             id="mensaje"
-                            rows="5"></textarea>
+                            name="mensaje"
+                            rows="5"
+                            autocomplete="off"
+                            required></textarea>
+
+                        <div class="invalid-feedback">
+                            Escribe un mensaje.
+                        </div>
 
                     </div>
 
@@ -522,14 +564,18 @@
                 </h3>
 
                 <p>
-                    Email: crespomoises2506@gmail.com
+                    Email:
+                    <a href="mailto:crespomoises2506@gmail.com">
+                        crespomoises2506@gmail.com
+                    </a>
                 </p>
 
                 <p>
                     GitHub:
                     <a href="https://github.com/moisescrespo"
                        target="_blank"
-                       rel="noopener">
+                       rel="noopener"
+                       aria-label="Abrir perfil de GitHub de Moisés Crespo">
                         github.com/moisescrespo
                     </a>
                 </p>
@@ -564,7 +610,8 @@
             <a href="https://github.com/moisescrespo"
                class="text-white"
                target="_blank"
-               rel="noopener">
+               rel="noopener"
+               aria-label="Abrir perfil de GitHub de Moisés Crespo">
                 github.com/moisescrespo
             </a>
         </p>
@@ -582,6 +629,87 @@
 
     <!-- JS propio -->
     <script src="js/main.js"></script>
+
+    </footer>
+
+        <!-- Modal CODE ARTS -->
+
+        <div class="modal fade"
+            id="modalCodeArts"
+            tabindex="-1"
+            aria-labelledby="modalCodeArtsLabel"
+            aria-hidden="true">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h2 class="modal-title fs-5"
+                            id="modalCodeArtsLabel">
+
+                            CODE ARTS
+
+                        </h2>
+
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Cerrar">
+                        </button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <p>
+                            CODE ARTS es un proyecto académico desarrollado utilizando
+                            HTML, CSS y JavaScript.
+                        </p>
+
+                        <p>
+                            El objetivo del proyecto fue crear una página web responsive,
+                            con una interfaz moderna y adaptable a distintos dispositivos.
+                        </p>
+
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+
+                            Cerrar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- JS propio -->
+        <script src="js/main.js"></script>
+
+        </body>
+
+        </html>
 
 </body>
 
