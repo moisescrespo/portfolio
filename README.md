@@ -8,7 +8,7 @@
 ## Tecnologías utilizadas
 
 - HTML5
-- CSS3
+- CSS
 - Bootstrap 5
 - JavaScript
 - Git
