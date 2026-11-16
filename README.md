@@ -1,10 +1,61 @@
-## Uso de herramientas de IA
+# Portfolio Personal - Moisés Crespo Paredes
 
-Como parte de mi proceso de aprendizaje, he utilizado herramientas de Inteligencia Artificial para acelerar ciertas tareas y comprender mejor algunos conceptos de diseño web.
+## Enlace al proyecto
 
-Concretamente, la IA se ha empleado para:
+- Portfolio publicado: https://moisescrespo.github.io/portfolio/
+- Repositorio GitHub: https://github.com/moisescrespo/portfolio
 
-- Generar algunas imágenes presentes en el portfolio.
-- Obtener sugerencias y ejemplos de CSS para la creación de estilos, diseño responsive y mejora visual de la interfaz.
+## Tecnologías utilizadas
 
-Todas las sugerencias han sido revisadas, adaptadas e integradas por mí en función de las necesidades del proyecto.
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+- Git
+- GitHub
+- GitHub Pages
+
+## Paleta de colores
+
+| Color | Código |
+|---------|---------|
+| Azul principal | #0d6efd |
+| Gris oscuro | #212529 |
+| Blanco | #ffffff |
+
+### Contraste
+
+Los colores utilizados en el portfolio han sido comprobados mediante las herramientas Lighthouse y WAVE, obteniendo 0 errores de contraste y cumpliendo los requisitos de accesibilidad recomendados.
+
+## Informe de calidad
+
+### Lighthouse (modo móvil)
+
+- Accesibilidad: 94
+- Buenas prácticas: 100
+- SEO: 100
+
+### WAVE
+
+- 0 errores
+- 0 errores de contraste
+
+### Validador HTML W3C
+
+- 0 errores
+- 0 advertencias
+
+### Validador CSS W3C
+
+- 0 errores
+
+### Evidencias
+
+Las capturas de las pruebas realizadas pueden consultarse en:
+
+docs/evidencias/
+
+### Portfolio
+
+Este portfolio está basado en una versión desarrollada anteriormente y ha sido actualizado, ampliado y adaptado para incorporar nuevos conocimientos, proyectos y mejoras realizadas durante el presente curso.
+
